@@ -290,6 +290,7 @@ namespace WPFUI.ViewModels
         {
             ResetScreen();
             IsUnlocked = false;
+            _resetPressed = false;
         }
 
         /// <summary>
