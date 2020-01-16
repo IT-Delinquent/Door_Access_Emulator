@@ -8,56 +8,56 @@
         Title="Door Access Emulator" Height="687" Width="500">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="3*" />
         </Grid.RowDefinitions>
 
         <!-- Screen TextBlock -->
         <Viewbox Margin="20">
-            <TextBlock x:Name="Screen"/>
+            <TextBlock x:Name="Screen" />
         </Viewbox>
 
         <!-- Button Grid -->
         <Grid Grid.Row="1">
             <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
             </Grid.ColumnDefinitions>
-            
+
             <!-- Number buttons -->
             <Button x:Name="One" Content="1" IsEnabled="{Binding ButtonsAreEnabled}" />
-            <Button x:Name="Two" Content="2" Grid.Column="1" 
+            <Button x:Name="Two" Content="2" Grid.Column="1"
                     IsEnabled="{Binding ButtonsAreEnabled}" />
-            <Button x:Name="Three" Content="3" Grid.Column="2" 
+            <Button x:Name="Three" Content="3" Grid.Column="2"
                     IsEnabled="{Binding ButtonsAreEnabled}" />
-            <Button x:Name="Four" Content="4" Grid.Row="1" 
+            <Button x:Name="Four" Content="4" Grid.Row="1"
                     IsEnabled="{Binding ButtonsAreEnabled}" />
-            <Button x:Name="Five" Content="5" Grid.Row="1" Grid.Column="1" 
+            <Button x:Name="Five" Content="5" Grid.Row="1" Grid.Column="1"
                     IsEnabled="{Binding ButtonsAreEnabled}" />
-            <Button x:Name="Six" Content="6" Grid.Row="1" Grid.Column="2" 
+            <Button x:Name="Six" Content="6" Grid.Row="1" Grid.Column="2"
                     IsEnabled="{Binding ButtonsAreEnabled}" />
-            <Button x:Name="Seven" Content="7" Grid.Row="2" 
+            <Button x:Name="Seven" Content="7" Grid.Row="2"
                     IsEnabled="{Binding ButtonsAreEnabled}" />
-            <Button x:Name="Eight" Content="8" Grid.Row="2" Grid.Column="1" 
+            <Button x:Name="Eight" Content="8" Grid.Row="2" Grid.Column="1"
                     IsEnabled="{Binding ButtonsAreEnabled}" />
-            <Button x:Name="Nine" Content="9" Grid.Row="2" Grid.Column="2" 
+            <Button x:Name="Nine" Content="9" Grid.Row="2" Grid.Column="2"
                     IsEnabled="{Binding ButtonsAreEnabled}" />
-            <Button x:Name="Zero" Content="0" Grid.Row="3" Grid.Column="1" 
+            <Button x:Name="Zero" Content="0" Grid.Row="3" Grid.Column="1"
                     IsEnabled="{Binding ButtonsAreEnabled}" />
-            
+
             <!-- Operation buttons -->
-            <Button x:Name="Cancel" Content="Cancel" Grid.Row="3" 
+            <Button x:Name="Cancel" Content="Cancel" Grid.Row="3"
                     IsEnabled="{Binding ButtonsAreEnabled}" />
             <Button x:Name="Reset" Content="Reset Code" Grid.Row="3" Grid.Column="2" />
-            <Button x:Name="Enter" Content="Enter" Grid.Row="4" Grid.ColumnSpan="3" 
+            <Button x:Name="Enter" Content="Enter" Grid.Row="4" Grid.ColumnSpan="3"
                     IsEnabled="{Binding ButtonsAreEnabled}" />
         </Grid>
     </Grid>
